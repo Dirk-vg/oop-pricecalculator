@@ -7,4 +7,7 @@ error_reporting(E_ALL);
 // include all your model files here
 require 'model/Customer.php';
 //include all your controllers here
-require 'Controller/HomePageController.php;
+require 'Controller/HomePageController.php';
+
+$controller = new HomePageController();
+$controller->render($_GET, $_POST);
