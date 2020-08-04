@@ -7,8 +7,8 @@ class Product
     private string $name;
     private int $price;
 
-    public function __construct(id $id, string $name, int $price){
-        
+    public function __construct(int $id, string $name, int $price){
+
 
     }
 
