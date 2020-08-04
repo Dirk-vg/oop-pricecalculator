@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Model/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="xblb1yam" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1fcnWeYfXmk6iyndmHTDitFrQQS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="" />
+      <created>1596526281753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596526281753</updated>
+      <workItem from="1596526282934" duration="6223000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1816" y="113" key="#PHP" timestamp="1596530771850">
+      <screen x="0" y="0" width="2752" height="1122" />
+    </state>
+    <state x="1816" y="113" key="#PHP/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596530771850" />
+    <state x="1690" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596529298506">
+      <screen x="0" y="0" width="2752" height="1122" />
+    </state>
+    <state x="1690" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596529298506" />
+    <state x="1906" y="268" key="NewPhpClassDialog" timestamp="1596532755223">
+      <screen x="0" y="0" width="2752" height="1122" />
+    </state>
+    <state x="1906" y="268" key="NewPhpClassDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596532755223" />
+    <state x="1933" y="481" key="NewPhpFileDialog" timestamp="1596527092066">
+      <screen x="0" y="0" width="2752" height="1122" />
+    </state>
+    <state x="1933" y="481" key="NewPhpFileDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596527092066" />
+  </component>
+</project>
