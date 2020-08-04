@@ -20,6 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Model/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +51,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/includes" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -79,23 +90,50 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="700" y="378" width="582" height="357" key="#Notifications" timestamp="1596543403399">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="700" y="378" width="582" height="357" key="#Notifications/72.27.1848.1053@72.27.1848.1053" timestamp="1596543403399" />
     <state x="1816" y="113" key="#PHP" timestamp="1596530771850">
       <screen x="0" y="0" width="2752" height="1122" />
     </state>
     <state x="1816" y="113" key="#PHP/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596530771850" />
-    <state x="1690" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596529298506">
-      <screen x="0" y="0" width="2752" height="1122" />
+    <state x="1110" y="233" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596543503277">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="1690" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596529298506" />
+    <state x="1110" y="233" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596543503277" />
+    <state width="1240" height="275" key="GridCell.Tab.0.bottom" timestamp="1596543438328">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1596543438328" />
+    <state width="1240" height="275" key="GridCell.Tab.0.center" timestamp="1596543438327">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1596543438327" />
+    <state width="1240" height="275" key="GridCell.Tab.0.left" timestamp="1596543438327">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1596543438327" />
+    <state width="1240" height="275" key="GridCell.Tab.0.right" timestamp="1596543438328">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1596543438328" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1596542906924">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/72.27.1848.1053@72.27.1848.1053" timestamp="1596542906924" />
     <state x="1906" y="268" key="NewPhpClassDialog" timestamp="1596532755223">
       <screen x="0" y="0" width="2752" height="1122" />
     </state>
     <state x="1906" y="268" key="NewPhpClassDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596532755223" />
-    <state x="1933" y="481" key="NewPhpFileDialog" timestamp="1596527092066">
-      <screen x="0" y="0" width="2752" height="1122" />
+    <state x="1370" y="478" width="399" height="156" key="NewPhpFileDialog" timestamp="1596542159790">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="1933" y="481" key="NewPhpFileDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596527092066" />
+    <state x="1370" y="478" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596542159790" />
   </component>
 </project>

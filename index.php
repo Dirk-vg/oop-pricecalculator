@@ -11,3 +11,5 @@ require 'Controller/HomePageController.php';
 
 $controller = new HomePageController();
 $controller->render($_GET, $_POST);
+
+$connect = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
