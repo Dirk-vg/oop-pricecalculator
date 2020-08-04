@@ -1,6 +1,5 @@
 <?php
-// this PHP file was used to generate the SQL files
-// You do not need this to finish the exersise.
+
 
 $structureSql = 'DROP TABLE IF EXISTS `customer_group`;
 CREATE TABLE `customer_group` (
