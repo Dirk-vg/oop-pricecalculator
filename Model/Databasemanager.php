@@ -2,7 +2,7 @@
 
 class Databasemanager{
 
-    private array $customer;
+    private string $customer;
     private array $customergroup;
     private array $product;
 
@@ -21,7 +21,7 @@ class Databasemanager{
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         ];
 
-        $pdo = new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass, $driverOptions);
+        $connect = new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass, $driverOptions);
 
         return $pdo;
 
@@ -30,6 +30,6 @@ class Databasemanager{
         $handle->bindValue(':id', 5);
         $handle->execute();
         $rows = $handle->fetchAll();
-        echo htmlspecialchars($rows[0]['some_field']);
+        echo htmlspecialchars($rows[0]['name']);
     }
 }
