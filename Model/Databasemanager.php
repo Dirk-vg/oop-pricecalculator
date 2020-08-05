@@ -8,9 +8,12 @@ class Databasemanager{
         $dbhost = "localhost";
         $dbuser = "becode";
         $dbpass = "PWD";
-        $db = "pricecalculator";
+        $dbname = "pricecalculator";
 
-        
+        // set DSN
+        $dsn = 'mysql:host='. $dbhost . ';dbname='. $dbname;
+
+
         $driverOptions = [
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'",
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
