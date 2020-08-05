@@ -8,7 +8,7 @@ class Customergroup{
     private int $fixedDiscount;
     private int $variableDiscount;
 
-    public function __construct(int $id, string $name, int $groupid, int $fixedDiscount, int $variableDiscount)
+    public function __construct(int $id, string $name, int $groupId, int $fixedDiscount, int $variableDiscount)
     {
         $this->id = $id;
         $this->name = $name;

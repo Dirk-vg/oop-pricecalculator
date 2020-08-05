@@ -1,11 +1,7 @@
 <?php
+require_once 'credentials.php';
 
 class Databasemanager{
-
-    private string $customer;
-    private array $customergroup;
-    private array $product;
-
 
     public function openconnection() :PDO
     {
@@ -14,6 +10,10 @@ class Databasemanager{
         $dbpass = "PWD";
         $db = "pricecalculator";
 
+        try {
+
+        }
+
 
         $driverOptions = [
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'",
@@ -21,15 +21,47 @@ class Databasemanager{
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         ];
 
-        $connect = new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass, $driverOptions);
-
-        return $PDO;
-
-        $pdo = openConnection();
-        $handle = $pdo->prepare('SELECT name FROM product where name = :name');
-        $handle->bindValue(':id', 5);
-        $handle->execute();
-        $rows = $handle->fetchAll();
-        echo htmlspecialchars($rows[0]['name']);
+        $pdo = new PDO('mysql:host=' . $dbhost . ';dbname=' . $db, $dbuser, $dbpass, $driverOptions);
+        return $pdo;
     }
+
+    public function getGroup($id)
+    {
+        $pdo = openConnection();
+        $handle = $pdo->prepare('SELECT * FROM customer_group WHERE id = :id');
+        $handle->bindValue(':id', $id);
+        $handle->execute();
+        $group = $handle->fetch();
+        return new Customergroup($group['id'], $group['name'], $group['parent_id'], $group['fixed_discount'], $group['variable_discount'] );
+    }
+
+    public function getProducts()
+    {
+        $pdo = openConnection();
+        $handle = $pdo->prepare('SELECT * FROM product');
+        $handle->execute();
+        $array = $handle->fetchAll();
+        $products = [];
+        foreach ($array as $item){
+            $products[$item['id']] = new product($item['id'], $item['name'], $item['price']);
+        }
+        return $products;
+    }
+
+    public function getCustomerdata()
+    {
+        $pdo = openConnection();
+        $handle = $pdo->prepare('SELECT * FROM customer');
+        $handle->execute();
+        $array = $handle->fetchAll();
+        $customers = [];
+        foreach ($array as $customer){
+            $group = $this->getGroup($customer['group_id']);
+            $customers[$customer['id']] = new customer($customer['id'], $customer['firstname'], $customer['lastname'], $customer['group_id'], $customer['fixed_discount'], $customer['variable_discount']);
+        }
+        return $customers;
+
+    }
+
+
 }
