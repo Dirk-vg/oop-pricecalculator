@@ -4,7 +4,7 @@ class Customergroup{
 
     private int $id;
     private string $name;
-    private int $groupid;
+    private int $groupId;
     private int $fixedDiscount;
     private int $variableDiscount;
 
@@ -12,7 +12,7 @@ class Customergroup{
     {
         $this->id = $id;
         $this->name = $name;
-        $this->groupis = $groupid;
+        $this->groupId = $groupId;
         $this->fixedDiscount = $fixedDiscount;
         $this->variableDiscount = $variableDiscount;
 
@@ -30,7 +30,7 @@ class Customergroup{
 
     public function getGroupid()
     {
-        return $this->groupid;
+        return $this->groupId;
     }
 
     public function getFixeddiscount()

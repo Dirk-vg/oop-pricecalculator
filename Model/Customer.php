@@ -3,7 +3,7 @@
 
 class Customer
 {
-    private int $îd;
+    private int $id;
     private string $firstName;
     private string $lastName;
     private int $groupId;
@@ -12,7 +12,7 @@ class Customer
 
     public function __construct(int $id, string $firstName, string $lastName, int $groupId, int $fixedDiscount, int $variableDiscount)
     {
-        $this->îd = $id;
+        $this->id = $id;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->groupId = $groupId;
@@ -23,7 +23,7 @@ class Customer
 
     public function getId()
     {
-        return $this->îd;
+        return $this->id;
     }
 
     public function getFirstname()

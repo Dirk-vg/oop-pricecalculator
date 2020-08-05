@@ -23,7 +23,7 @@ class Databasemanager{
 
         $connect = new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass, $driverOptions);
 
-        return $pdo;
+        return $PDO;
 
         $pdo = openConnection();
         $handle = $pdo->prepare('SELECT name FROM product where name = :name');
