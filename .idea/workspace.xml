@@ -20,6 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/HomePageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/HomePageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/CustomerLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Customergroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Customergroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/CustomergroupLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomergroupLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Databasemanager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DatabaseManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/ProductLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ProductLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/homepage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,6 +162,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="606" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1596551558506" />
+    <state x="828" y="314" width="325" height="485" key="refactoring.ChangeSignatureDialog" timestamp="1596704905416">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="828" y="314" width="325" height="485" key="refactoring.ChangeSignatureDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596704905416" />
     <state x="1121" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596614353614">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

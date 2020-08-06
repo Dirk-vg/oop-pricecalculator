@@ -1,29 +1,28 @@
 <?php
 
-class ProductLoader extends Databasemanager
+class ProductLoader extends DatabaseManager
 {
     private array $products;
 
     public function __construct()
     {
         // set DSN
-        $dsn = 'mysql:host=' . $this->dbhost . ';dbname=' . $this->dbname;
+       /* $dsn = 'mysql:host=' . $this->dbhost . ';dbname=' . $this->dbname;
 
         // create a PDO instance
-        $pdo = new PDO($dsn, $this->dbuser, $this->dbpass);
-        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+        $pdo = new PDO($dsn, $this->dbuser, $this->dbpass);Price()
+        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);*/
 
-        $sql = 'SELECT * FROM product';
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
+        //$sql = 'SELECT * FROM product';
+        $stmt = $this->connect()->query('SELECT * FROM product');
         $products = $stmt->fetchAll();
         foreach ($products as $product){
-            $products = new Product($product['id'], $product['name'], $product['price']);
+            $this->products[] = new Product((int)$product['id'], (string)$product['name'], (int)$product['price']);
         }
 
     }
 
-    public function getAllProducts()
+    public function getAllProducts():array
     {
         return $this->products;
     }

@@ -1,28 +1,23 @@
 <?php
 
-class CustomergroupLoader extends Databasemanager
+class CustomergroupLoader extends DatabaseManager
 {
     private array $customergroup;
 
     public function __construct()
     {
-        // set DSN
-        $dsn = 'mysql:host=' . $this->dbhost . ';dbname=' . $this->dbname;
-
-        // create a PDO instance
-        $pdo = new PDO($dsn, $this->dbuser, $this->dbpass);
-        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
         $sql = 'SELECT * FROM customer_group';
-        $stmt = $pdo->prepare($sql);
+        $stmt = $this->connect()->prepare($sql);
         $stmt->execute();
         $customergroups = $stmt->fetchAll();
         foreach ($customergroups as $customergroup){
-            $customergroups = new Customergroup($customergroup['id'], $customergroup['name'], $customergroup['parent_id'], $customergroup['fixed_discount'], $customergroup['variable_discount']);
+            $this->customergroup[] = new Customergroup((int)$customergroup['id'], (string)$customergroup['name'], (int)$customergroup['parent_id'],
+                (int)$customergroup['fixed_discount'], (int)$customergroup['variable_discount']);
         }
     }
 
-    public function getCustomergroup()
+    public function getCustomergroup():array
     {
         return $this->customergroup;
     }

@@ -1,39 +1,25 @@
 <?php
-require_once 'credentials.php';
+//require_once 'credentials.php';
 
-class Databasemanager
+class DatabaseManager
 {
-
-    protected $dbhost = "localhost";
-    protected $dbuser = "becode";
-    protected $dbpass = "PWD";
-    protected $dbname = "pricecalculator";
-
 
     public function connect(): PDO
     {
-        $this->dbhost = "localhost";
-        $this->dbuser = "becode";
-        $this->dbpass = "becode123";
-        $this->dbname = "pricecalculator";
+        
+        try {
+            $databaseHost = "localhost";
+            $databaseUser = "becode";
+            $databasePassword = "becode123";
+            $databaseName = "pricecalculator";
 
-
-            // set DSN
-            $dsn = 'mysql:host=' . $this->dbhost . ';dbname=' . $this->dbname;
-
-            // create a PDO instance
-            $pdo = new PDO($dsn, $this->dbuser, $this->dbpass);
-            $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-
-            return $pdo;
-
-
-
-        //PDO QUERY
-
-        $stmt = $pdo->query('SELECT * FROM product ');
-        while ($row = $stmt ->fetch(PDO::FETCH_ASSOC)) {
-            echo $row['name']. '<br>';
+            $driverOptions = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'",
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,];
+            //echo 'Connected successfully';
+            return new PDO('mysql:host=' . $databaseHost . ';dbname=' . $databaseName, $databaseUser, $databasePassword, $driverOptions);
+        } catch (PDOException $e) {
+            echo "Connection failed: " . $e->getMessage();
         }
     }
 }
@@ -88,4 +74,4 @@ class Databasemanager
     }
 
 
-}
+}*/

@@ -1,8 +1,7 @@
 <?php
-require_once 'Databasemanager.php';
 
 
-class Product extends Databasemanager
+class Product
 {
     private int $id;
     private string $name;
@@ -16,17 +15,20 @@ class Product extends Databasemanager
 
     }
 
-    public function getId(){
+    public function getId():int
+    {
 
         return $this->id;
     }
 
-    public function getName(){
+    public function getName():string
+    {
 
         return $this->name;
     }
 
-    public function getPrice(){
+    public function getPrice():int
+    {
 
         return $this->price;
     }

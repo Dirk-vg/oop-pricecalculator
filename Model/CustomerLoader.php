@@ -1,29 +1,22 @@
 <?php
 
-class CustomerLoader extends Databasemanager
+class CustomerLoader extends DatabaseManager
 {
     private array $customers;
 
     public function __construct()
     {
-        // set DSN
-        $dsn = 'mysql:host=' . $this->dbhost . ';dbname=' . $this->dbname;
 
-        // create a PDO instance
-        $pdo = new PDO($dsn, $this->dbuser, $this->dbpass);
-        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-
-        $sql = 'SELECT * FROM customer';
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
+        //$sql = 'SELECT * FROM customer';
+        $stmt = $this->connect()->query('SELECT * FROM customer');
         $customers = $stmt->fetchAll();
         foreach ($customers as $customer){
-            $customers = new Customer($customer['id'], $customer['firstname'], $customer['lastname'],
-                $customer['group_id'], $customer['fixed_discount'], $customer['variable_discount']);
+            $this->customers[] = new Customer((int)$customer['id'], (string)$customer['firstname'], (string)$customer['lastname'],
+                (int)$customer['group_id'], (int)$customer['fixed_discount'], (int)$customer['variable_discount']);
         }
     }
 
-    public function getCustomers()
+    public function getCustomers():array
     {
         return $this->customers;
     }

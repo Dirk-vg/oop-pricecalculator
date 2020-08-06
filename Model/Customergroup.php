@@ -1,6 +1,7 @@
 <?php
 
-class Customergroup{
+class Customergroup
+{
 
     private int $id;
     private string $name;
