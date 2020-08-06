@@ -4,8 +4,10 @@
 
         <label for="products">
             <select>
+                <option value="">Select Product</option>
                     <?php
                     /** @var Product[] $products */
+                    $products = $products->getAllProducts();
                     foreach ($products as $product) {
                             $id = $product->getId();
                             $name = ucfirst($product->getName());
@@ -20,6 +22,7 @@
                 <option value="">Select Customer</option>
                 <?php
                 /** @var Customer[] $customers */
+                $customers = $customers->getCustomers();
                 foreach ($customers as $customer) {
                     $id = $customer->getId();
                     $firstname = $customer->getFirstname();
