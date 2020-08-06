@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Model/CustomerLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/CustomergroupLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/ProductLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Databasemanager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Databasemanager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/homepage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +38,11 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="xblb1yam" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="C:/xampp/php/PEAR" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1fcnWeYfXmk6iyndmHTDitFrQQS" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -77,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596526281753</updated>
       <workItem from="1596526282934" duration="6838000" />
+      <workItem from="1596696721199" duration="2071000" />
     </task>
     <servers />
   </component>
@@ -100,10 +100,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="700" y="378" width="582" height="357" key="#Notifications/72.27.1848.1053@72.27.1848.1053" timestamp="1596543403399" />
-    <state x="1210" y="133" width="710" height="766" key="#PHP" timestamp="1596680702696">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="1816" y="113" width="710" height="766" key="#PHP" timestamp="1596696764171">
+      <screen x="0" y="0" width="2752" height="1122" />
     </state>
-    <state x="1816" y="113" key="#PHP/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596530771850" />
+    <state x="1816" y="113" key="#PHP/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596696764171" />
     <state x="1210" y="133" width="710" height="766" key="#PHP/72.27.1848.1053@72.27.1848.1053" timestamp="1596680702696" />
     <state x="1110" y="233" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596543503277">
       <screen x="72" y="27" width="1848" height="1053" />
