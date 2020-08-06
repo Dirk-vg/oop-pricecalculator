@@ -1,7 +1,8 @@
 <?php
+require_once 'Databasemanager.php';
 
 
-class Product
+class Product extends Databasemanager
 {
     private int $id;
     private string $name;

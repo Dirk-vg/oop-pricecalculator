@@ -1,26 +1,51 @@
 <?php
 require_once 'credentials.php';
 
-class Databasemanager{
+class Databasemanager
+{
 
-    public function openconnection() :PDO
+    protected $dbhost = "localhost";
+    protected $dbuser = "becode";
+    protected $dbpass = "PWD";
+    protected $dbname = "pricecalculator";
+
+
+    public function connect(): PDO
     {
-        $dbhost = "localhost";
-        $dbuser = "becode";
-        $dbpass = "PWD";
-        $dbname = "pricecalculator";
-
-        // set DSN
-        $dsn = 'mysql:host='. $dbhost . ';dbname='. $dbname;
+        $this->dbhost = "localhost";
+        $this->dbuser = "becode";
+        $this->dbpass = "becode123";
+        $this->dbname = "pricecalculator";
 
 
+            // set DSN
+            $dsn = 'mysql:host=' . $this->dbhost . ';dbname=' . $this->dbname;
+
+            // create a PDO instance
+            $pdo = new PDO($dsn, $this->dbuser, $this->dbpass);
+            $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+            return $pdo;
+
+
+
+        //PDO QUERY
+
+        $stmt = $pdo->query('SELECT * FROM product ');
+        while ($row = $stmt ->fetch(PDO::FETCH_ASSOC)) {
+            echo $row['name']. '<br>';
+        }
+    }
+}
+
+/*
         $driverOptions = [
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'",
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         ];
 
-        $pdo = new PDO('mysql:host=' . $dbhost . ';dbname=' . $db, $dbuser, $dbpass, $driverOptions);
+        $pdo = new PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname, $dbuser, $dbpass, $driverOptions);
         return $pdo;
     }
 
