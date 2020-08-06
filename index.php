@@ -4,7 +4,7 @@ ini_set('display_errors', "1");
 ini_set('display_startup_errors', "1");
 error_reporting(E_ALL);
 
-require_once 'credentials.php';
+//require_once 'credentials.php';
 
 
 # INCLUDE CONTROLLERS HERE
@@ -17,8 +17,8 @@ require_once 'Model/CustomerLoader.php';
 require_once 'Model/Discount.php';
 require_once 'Model/Product.php';
 require_once 'Model/ProductLoader.php';
-require_once 'Model/Customergroup.php';
-require_once 'Model/CustomergroupLoader.php';
+require_once 'Model/CustomerGroup.php';
+require_once 'Model/CustomerGroupLoader.php';
 //require_once 'Model/Login.php';
 
 

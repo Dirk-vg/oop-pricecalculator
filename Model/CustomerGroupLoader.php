@@ -1,6 +1,6 @@
 <?php
 
-class CustomergroupLoader extends DatabaseManager
+class CustomerGroupLoader extends DatabaseManager
 {
     private array $customergroup;
 

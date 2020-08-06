@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/homepage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DatabaseManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DatabaseManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +111,10 @@
     </state>
     <state x="1690" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596529298506" />
     <state x="1110" y="233" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596543503277" />
+    <state x="1534" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596715490999">
+      <screen x="0" y="0" width="2752" height="1122" />
+    </state>
+    <state x="1534" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596715490999" />
     <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596678234769">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
