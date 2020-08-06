@@ -1,9 +1,8 @@
 <?php require 'includes/header.php'?>
 
-    <section>
-
-        <label for="products">
-            <select>
+    <form method="post" action="">
+        <label for="product">Choose a product:</label>
+            <select name="product" id="product">
                 <option value="">Select Product</option>
                     <?php
                     /** @var Product[] $products */
@@ -16,9 +15,9 @@
                     }
                     ?>
             </select>
-        </label>
-        <label for="customers">
-            <select name="" id="">
+
+        <label for="customer">Choose a customer:</label>
+            <select name="customer" id="customer">
                 <option value="">Select Customer</option>
                 <?php
                 /** @var Customer[] $customers */
@@ -32,8 +31,7 @@
                 ?>
             </select>
 
-        </label>
+        <button type="submit" name="submit">submit</button>
+    </form>
 
-
-    </section>
 <?php require 'includes/footer.php'?>

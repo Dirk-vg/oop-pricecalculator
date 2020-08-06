@@ -6,18 +6,16 @@ class Customer
     private int $id;
     private string $firstName;
     private string $lastName;
-    private int $groupId;
-    private int $fixedDiscount;
-    private int $variableDiscount;
+    private CustomerGroup $customerGroup;
+    private Discount $discount;
 
-    public function __construct(int $id, string $firstName, string $lastName, int $groupId, int $fixedDiscount, int $variableDiscount)
+    public function __construct(int $id, string $firstName, string $lastName, CustomerGroup $customerGroup, Discount $discount)
     {
         $this->id = $id;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
-        $this->groupId = $groupId;
-        $this->fixedDiscount = $fixedDiscount;
-        $this->variableDiscount = $variableDiscount;
+        $this->customerGroup = $customerGroup;
+        $this->discount = $discount;
 
     }
 
@@ -36,21 +34,15 @@ class Customer
         return $this->lastName;
     }
 
-    public function getGroupid()
+    public function getCustomerGroup()
     {
-        return $this->groupId;
+        return $this->customerGroup;
     }
 
-    public function getFixeddiscount()
+    public function getDiscount()
     {
-        return $this->fixedDiscount;
+        return $this->discount;
     }
-
-    public function getVariablediscount()
-    {
-        return $this->variableDiscount;
-    }
-
 
 
 }
