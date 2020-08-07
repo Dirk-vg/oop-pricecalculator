@@ -26,4 +26,13 @@ class ProductLoader extends DatabaseManager
     {
         return $this->products;
     }
+
+    public function getProductById(int $id): Product
+    {
+        foreach ($this->getAllProducts() as $product) {
+            if ($id === $product->getId()) {
+                return $product;
+            }
+        }
+    }
 }

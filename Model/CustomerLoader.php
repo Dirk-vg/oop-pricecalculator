@@ -38,12 +38,14 @@ class CustomerLoader extends DatabaseManager
 
     public function getCustomerById(int $id)  :? Customer
     {
-        foreach ($this->customers as $customer){
-            if ($customer->getId() === $id){
+        foreach ($this->customers as $customer) {
+            if ($customer->getId() === $id) {
                 return $customer;
             }
         }
     }
+
+
 
 
 }

@@ -2,7 +2,7 @@
 
 class CustomerGroupLoader extends DatabaseManager
 {
-    private array $customergroup;
+    private array $customerGroup;
 
     public function __construct()
     {
@@ -18,6 +18,6 @@ class CustomerGroupLoader extends DatabaseManager
 
     public function getCustomergroup():array
     {
-        return $this->customergroup;
+        return $this->customerGroup;
     }
 }

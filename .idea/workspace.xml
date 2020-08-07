@@ -20,19 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Model/Calculation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/HomePageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/HomePageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Customer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/CustomerGroupLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerGroupLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/CustomerLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Customergroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerGroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DatabaseManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DatabaseManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Discount.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Discount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/ProductLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ProductLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/homepage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/info.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +104,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="625" y="235" width="732" height="644" key="#Inspections" timestamp="1596736074200">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="625" y="235" width="732" height="644" key="#Inspections/72.27.1848.1053@72.27.1848.1053" timestamp="1596736074200" />
     <state x="700" y="378" width="582" height="357" key="#Notifications" timestamp="1596727568060">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="700" y="378" width="582" height="357" key="#Notifications/72.27.1848.1053@72.27.1848.1053" timestamp="1596727568060" />
-    <state x="1210" y="133" width="710" height="766" key="#PHP" timestamp="1596719145491">
+    <state x="1210" y="133" width="710" height="766" key="#PHP" timestamp="1596739624495">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="1816" y="113" key="#PHP/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596696764171" />
-    <state x="1210" y="133" width="710" height="766" key="#PHP/72.27.1848.1053@72.27.1848.1053" timestamp="1596719145491" />
+    <state x="1210" y="133" width="710" height="766" key="#PHP/72.27.1848.1053@72.27.1848.1053" timestamp="1596739624495" />
     <state x="1110" y="233" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596543503277">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

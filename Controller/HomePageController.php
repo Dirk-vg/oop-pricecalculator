@@ -9,19 +9,24 @@ class HomePageController
         $customers = new CustomerLoader();
         $customers->getCustomers();
 
+        $products = new ProductLoader();
+        $products->getAllProducts();
 
-        //this is just example code, you can remove the line below
         if (isset($_POST['submit'])){
-            $customer = $customers->getCustomerById((int)$_POST['customer']);
-            //var_dump($customer);
+                $customer = $customers->getCustomerById((int)$_POST['customer']);
+                //var_dump($customer);
+        }
+
+        if (isset($_POST['submit'])){
+            $products = $products->getProductById((int)$_POST['product']);
+            var_dump($products);
         }
 
         //you should not echo anything inside your controller - only assign vars here
         // then the view will actually display them.
 
         //load the view
-        $products = new ProductLoader();
-        $products->getAllProducts();
+
 
 
 
