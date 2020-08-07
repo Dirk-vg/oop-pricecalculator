@@ -1,5 +1,5 @@
 <?php
-
+/*
 class Discount //immutable
 {
     public const FIXED_TYPE = 'fixed';
@@ -42,4 +42,4 @@ class Discount //immutable
 
         return round($price * (1-$this->value/100), 2);
     }
-}
+}*/

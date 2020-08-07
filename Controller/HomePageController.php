@@ -14,12 +14,12 @@ class HomePageController
 
         if (isset($_POST['submit'])){
                 $customer = $customers->getCustomerById((int)$_POST['customer']);
-                //var_dump($customer);
+                var_dump($customer);
         }
 
         if (isset($_POST['submit'])){
             $products = $products->getProductById((int)$_POST['product']);
-            var_dump($products);
+            //var_dump($products);
         }
 
         //you should not echo anything inside your controller - only assign vars here
