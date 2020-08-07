@@ -33,9 +33,9 @@ class Product
         return $this->price;
     }
 
-    public function getBestPrice()
-    {
-        
-    }
+//    public function getBestPrice()
+//    {
+//
+//    }
 
 }

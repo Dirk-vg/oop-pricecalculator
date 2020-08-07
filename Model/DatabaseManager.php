@@ -9,8 +9,8 @@ class DatabaseManager
         
         try {
             $databaseHost = "localhost";
-            $databaseUser = "becode";
-            $databasePassword = "becode123";
+            $databaseUser = "root";
+            $databasePassword = "Compile-1894";
             $databaseName = "pricecalculator";
 
             $driverOptions = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'",

@@ -6,11 +6,11 @@ class Customer
     private int $id;
     private string $firstName;
     private string $lastName;
-    private CustomerGroup $customerGroup;
+    private array $customerGroup;
     private int $fixedDiscount;
     private int $variableDiscount;
 
-    public function __construct(int $id, string $firstName, string $lastName, CustomerGroup $customerGroup, int $fixedDiscount, int $variableDiscount)
+    public function __construct(int $id, string $firstName, string $lastName, array $customerGroup, int $fixedDiscount, int $variableDiscount)
     {
         $this->id = $id;
         $this->firstName = $firstName;

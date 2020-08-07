@@ -6,8 +6,8 @@ class HomePageController
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render():void
     {
-        $customers = new CustomerLoader();
-        $customers->getCustomers();
+        //$customers = new CustomerLoader();
+        //$customers->getCustomers();
 
         $products = new ProductLoader();
         $products->getAllProducts();
