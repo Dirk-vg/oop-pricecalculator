@@ -22,12 +22,9 @@
     <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/HomePageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/HomePageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/CustomerGroupLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerGroupLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/CustomerLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/DatabaseManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DatabaseManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Discount.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <recent name="$PROJECT_DIR$/includes" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

@@ -11,12 +11,12 @@ class CustomerGroupLoader extends DatabaseManager
         $stmt = $this->connect()->query($sql);
         $customergroups = $stmt->fetchAll();
         foreach ($customergroups as $customergroup){
-            $this->customergroup[] = new CustomerGroup((int)$customergroup['id'], (string)$customergroup['name'], (int)$customergroup['parent_id'],
-                new Discount((int)$customergroup['fixed_discount'], (int)$customergroup['variable_discount']));
+            $this->customergroup[] = new CustomerGroup((int)$customergroup['id'], (string)$customergroup['name'], (array)$customergroup['parent_id'],
+                (int)$customergroup['fixed_discount'], (int)$customergroup['variable_discount']);
         }
     }
 
-    public function getCustomergroup():array
+    public function getCustomerGroup():array
     {
         return $this->customerGroup;
     }

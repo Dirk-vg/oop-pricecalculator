@@ -6,15 +6,15 @@ class HomePageController
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render():void
     {
-        //$customers = new CustomerLoader();
-        //$customers->getCustomers();
+        $customers = new CustomerLoader();
+        $customers->getCustomers();
 
         $products = new ProductLoader();
         $products->getAllProducts();
 
         if (isset($_POST['submit'])){
                 $customer = $customers->getCustomerById((int)$_POST['customer']);
-                var_dump($customer);
+                //var_dump($customer);
         }
 
         if (isset($_POST['submit'])){
@@ -22,7 +22,7 @@ class HomePageController
             //var_dump($products);
         }
 
-        //you should not echo anything inside your controller - only assign vars here
+       //you should not echo anything inside your controller - only assign vars here
         // then the view will actually display them.
 
         //load the view
