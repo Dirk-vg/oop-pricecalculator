@@ -3,7 +3,12 @@
 class CustomerLoader extends DatabaseManager
 {
     private array $customers;
+    private CustomerGroup $customerGroup;
 
+    public function getCustomers(): array
+    {
+        return $this->customers;
+    }
    public function __construct()
     {
 
@@ -13,16 +18,13 @@ class CustomerLoader extends DatabaseManager
         $customerGroupLoader = new CustomerGroupLoader();
         $customerGroupLoader->getCustomerGroup();
        foreach ($customers as $customer){
-           $customerGroup = $customerGroupLoader[$customer['group_id']];
+           $this->customerGroup = $customerGroupLoader[$customer['group_id']];
            $this->customers[$customer['id']] = new Customer((int)$customer['id'], (string)$customer['firstname'], (string)$customer['lastname'],$customerGroup, (int)$customer['fixed_discount'], (int)$customer['variable_discount']);
       }
     }
 
-    public function getCustomers()
-    {
-        return $this->customers;
-    }
-/*
+
+
     public function getCustomerById(int $id)
     {
         foreach ($this->customers as $customer) {
@@ -31,8 +33,5 @@ class CustomerLoader extends DatabaseManager
             }
         }
     }
-*/
-
-
 
 }
