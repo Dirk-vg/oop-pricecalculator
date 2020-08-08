@@ -16,10 +16,10 @@ class CustomerLoader extends DatabaseManager
         $stmt = $this->connect()->query($sql);
         $customers = $stmt->fetchAll();
         $customerGroupLoader = new CustomerGroupLoader();
-        $customerGroupLoader->getCustomerGroup();
+        //$customerGroupLoader->getCustomerGroups();
        foreach ($customers as $customer){
-           $this->customerGroup = $customerGroupLoader[$customer['group_id']];
-           $this->customers[$customer['id']] = new Customer((int)$customer['id'], (string)$customer['firstname'], (string)$customer['lastname'],$customerGroup, (int)$customer['fixed_discount'], (int)$customer['variable_discount']);
+           $this->customerGroup = $customerGroupLoader->getCustomerGroups()[$customer['group_id']];
+           $this->customers[$customer['id']] = new Customer((int)$customer['id'], (string)$customer['firstname'], (string)$customer['lastname'], $this->customerGroup, (int)$customer['fixed_discount'], (int)$customer['variable_discount']);
       }
     }
 

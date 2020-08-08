@@ -12,15 +12,15 @@ class CustomerGroup
 
 
 
-    public function __construct(int $id, string $name, int $parentId, int $variableDiscount, int $fixedDiscount, CustomerGroupLoader $customerGroupLoader)
+    public function __construct(int $id, string $name, int $parentId, int $variableDiscount, int $fixedDiscount, ?CustomerGroupLoader $customerGroupLoader)
     {
         $this->id = $id;
         $this->name = $name;
         $this->parentId = $parentId;
         $this->variableDiscount = $variableDiscount;
         $this->fixedDiscount = $fixedDiscount;
-        $customerGroup = $customerGroupLoader->getCustomerGroup();
-        $this->customerGroup = ($parentId !== 0) ?$customerGroup['parent_id'] :null;
+        $customerGroups = $customerGroupLoader->getCustomerGroups();
+        $this->customerGroup = ($parentId !== 0) ?$customerGroups['parent_id'] : null;
 
 
     }
@@ -50,7 +50,7 @@ class CustomerGroup
         return $this->fixedDiscount;
     }
 
-    public function getCustomerGroup(): CustomerGroup
+    public function getCustomerGroup(): ?CustomerGroup
     {
         return $this->customerGroup;
     }

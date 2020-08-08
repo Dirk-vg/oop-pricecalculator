@@ -2,23 +2,24 @@
 
 class CustomerGroupLoader extends DatabaseManager
 {
-    private array $customerGroup;
+    private array $customerGroups = [];
 
     public function __construct()
     {
-
-        $sql = 'SELECT * FROM customer_group';
-        $stmt = $this->connect()->query($sql);
-        $customerGroups = $stmt->fetchAll();
-        foreach ($customerGroups as $customergroup){
-            $this->customerGroup[] = new CustomerGroup((int)$customergroup['id'], (string)$customergroup['name'], (int)$customergroup['parent_id'],
-                (int)$customergroup['fixed_discount'], (int)$customergroup['variable_discount']);
+        if (empty($this->customerGroups)) {
+            $sql = 'SELECT * FROM customer_group';
+            $stmt = $this->connect()->query($sql);
+            $customerGroups = $stmt->fetchAll();
+            foreach ($customerGroups as $customerGroup) {
+                $this->customerGroups[$customerGroup['id']] = new CustomerGroup((int)$customerGroup['id'], (string)$customerGroup['name'], (int)$customerGroup['parent_id'],
+                    (int)$customerGroup['fixed_discount'], (int)$customerGroup['variable_discount'], $this);
+            }
         }
     }
 
-    public function getCustomerGroup(): array
+    public function getCustomerGroups(): array
     {
-        return $this->customerGroup;
+        return $this->customerGroups;
     }
 
 }

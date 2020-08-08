@@ -6,11 +6,11 @@ class Customer
     private int $id;
     private string $firstName;
     private string $lastName;
-    private array $customerGroup;
+    private Customergroup $customerGroup;
     private int $fixedDiscount;
     private int $variableDiscount;
 
-    public function __construct(int $id, string $firstName, string $lastName, array $customerGroup, int $fixedDiscount, int $variableDiscount)
+    public function __construct(int $id, string $firstName, string $lastName, CustomerGroup $customerGroup, int $fixedDiscount, int $variableDiscount)
     {
         $this->id = $id;
         $this->firstName = $firstName;
@@ -37,17 +37,17 @@ class Customer
         return $this->lastName;
     }
 
-    public function getCustomerGroup():CustomerGroup
+    public function getCustomerGroup(): CustomerGroup
     {
         return $this->customerGroup;
     }
 
-    public function getFixedDiscount()
+    public function getFixedDiscount():int
     {
         return $this->fixedDiscount;
     }
 
-    public function getVariableDiscount()
+    public function getVariableDiscount():int
     {
         return$this->variableDiscount;
     }
@@ -56,10 +56,11 @@ class Customer
     {
         $array[] = $customerGroup-> getVariableDiscount();
 
-        if ($customerGroup !== null) {
-            $customerGroup = $this->makeVarArray($customerGroup, $array);
+        if ($customerGroup->getCustomerGroup() !== null) {
+            $customerGroup = $customerGroup->getCustomerGroup();
+            $array = $this->makeVarArray($customerGroup, $array);
         }
-        return $customerGroup;
+        return $array;
     }
 
 }

@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6a3e2ee2-0932-40a9-b963-fd3469353c09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Customer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/CustomerGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerGroup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/CustomerGroupLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerGroupLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/CustomerLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CustomerLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbh.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,7 @@
       <recent name="$PROJECT_DIR$/includes" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -87,6 +89,7 @@
       <workItem from="1596696721199" duration="2690000" />
       <workItem from="1596785191371" duration="6978000" />
       <workItem from="1596794733120" duration="7740000" />
+      <workItem from="1596925838175" duration="4808000" />
     </task>
     <servers />
   </component>
@@ -114,11 +117,11 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="700" y="378" width="582" height="357" key="#Notifications/72.27.1848.1053@72.27.1848.1053" timestamp="1596727568060" />
-    <state x="1210" y="133" width="710" height="766" key="#PHP" timestamp="1596739624495">
+    <state x="1210" y="133" width="710" height="766" key="#PHP" timestamp="1596926061520">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="1816" y="113" key="#PHP/3440.0.1536.834/0.0.2752.1122@0.0.2752.1122" timestamp="1596696764171" />
-    <state x="1210" y="133" width="710" height="766" key="#PHP/72.27.1848.1053@72.27.1848.1053" timestamp="1596739624495" />
+    <state x="1210" y="133" width="710" height="766" key="#PHP/72.27.1848.1053@72.27.1848.1053" timestamp="1596926061520" />
     <state x="1110" y="233" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596543503277">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
