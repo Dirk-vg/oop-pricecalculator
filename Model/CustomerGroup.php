@@ -20,7 +20,7 @@ class CustomerGroup
         $this->variableDiscount = $variableDiscount;
         $this->fixedDiscount = $fixedDiscount;
         $customerGroups = $customerGroupLoader->getCustomerGroups();
-        $this->customerGroup = ($parentId !== 0) ?$customerGroups['parent_id'] : null;
+        $this->customerGroup = ($parentId !== 0) ?$customerGroups[$parentId] : null;
 
 
     }
